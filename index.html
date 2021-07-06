@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Start -->
+    <!-- overlay -->
+    <div class="overlay-main">
+      <i class="fas fa-times fa-2x" id="close"></i>
+      <div class="input-group mb-3">
+        <input
+        id="search_input"
+          type="text"
+          class="form-control"
+          placeholder="Search logistic..."
+          aria-label="Search"
+          aria-describedby="basic-addon1"
+        />
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"
+            ><i class="fas fa-search"></i
+          ></span>
+        </div>
+      </div>
+    </div>
+    <!-- overlay -->
+    <!-- btn -->
+
+    <div class="btn-scroll" id="scroll_to_top">
+      <button><i class="fas fa-chevron-up"></i></button>
+    </div>
+    <!-- btn -->
+    <header>
+      <div class="header-main" id="home">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#"
+              ><i class="fas fa-project-diagram"></i> Foundation</a
+            >
+            <button
+              class="custom-toggler navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#home"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#teams">Teams</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#news">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <main>
+            <div class="hero">
+              <div class="start-text" data-aos="fade-up">
+                <h1 class="mb-2">Find logistic services</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione quisquam consequatur deserunt ad iusto doloremque
+                  fugit mollitia, praesentium ipsam fugiat ullam in magnam sunt
+                  impedit reprehenderit suscipit amet, autem perspiciatis.
+                </p>
+              </div>
+              <div class="start-flex my-5" data-aos="fade-up">
+                <p>Your ZIP code or City. e.g. New York</p>
+                <button class="btn btn-hero" id="open_box_search">
+                  Search
+                </button>
+              </div>
+              <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 text-center my-3 my-md-4" data-aos="fade-up">
+                  <span class="counter" data-target="2917"></span>
+                  <div class="ligne my-3"></div>
+                  <p># of Companies</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12  text-center my-3 my-md-4" data-aos="fade-up">
+                  <span class="counter" data-target="3918"></span>
+                  <div class="ligne my-3"></div>
+                  <p># of Roag Freight</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12  text-center my-3 my-md-4" data-aos="fade-up">
+                  <span class="counter" data-target="38928"></span>
+                  <div class="ligne my-3"></div>
+                  <p># of Air Freight</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12  text-center my-3 my-md-4" data-aos="fade-up">
+                  <span class="counter" data-target="7192"></span>
+                  <div class="ligne my-3"></div>
+                  <p># of Sea Freight</p>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </header>
+    <section class="dis_phone">
+      <div class="our_main">
+        <div class="container">
+          <div class="row justify-content-md-center" data-aos="fade-up">
+            <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+              <div class="box_log box_serv d-flex">
+                <img src="img/delivery-truck.png" alt="" />
+                <div class="text_logistic">
+                  <h4 class="title_black mb-1">Land Freight</h4>
+                  <p class="mb-1">
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts.
+                  </p>
+                  <a class="link" href="#"
+                    >READ MORE <i class="fas fa-long-arrow-alt-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12  my-3">
+              <div class="box_log box_serv d-flex">
+                <img src="img/airplane.png" alt="" />
+                <div class="text_logistic">
+                  <h4 class="title_black mb-1">Air Freight</h4>
+                  <p class="mb-1">
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts.
+                  </p>
+                  <a class="link" href="#"
+                    >READ MORE <i class="fas fa-long-arrow-alt-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12  my-3">
+              <div class="box_log box_serv d-flex">
+                <img src="img/ship.png" alt="" />
+                <div class="text_logistic">
+                  <h4 class="title_black mb-1">Sea Freight</h4>
+                  <p class="mb-1">
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts.
+                  </p>
+                  <a class="link" href="#"
+                    >READ MORE <i class="fas fa-long-arrow-alt-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services">
+      <div class="services-main padding">
+        <div class="container">
+          <h5 class="title_light text-center">This for You</h5>
+          <h2 class="title3 text-center">Services</h2>
+          <div class="row">
+            <div class="col-lg-4 col-md-3 col-sm-12 my-3 my-sm-4" data-aos="zoom-in">
+              <div class="box_serv d-flex">
+                <img src="img/calendar serv.png" alt="" />
+                <div class="text_logistic">
+                  <h4 class="title_black mb-1">Sea Freight</h4>
+                  <p class="mb-1">
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts.
+                  </p>
+                  <a class="link" href="#"
+                    >READ MORE <i class="fas fa-long-arrow-alt-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 my-3 my-sm-4 col-md-3 col-sm-12" data-aos="zoom-in">
+              <div class="box_serv d-flex">
+                <img src="img/delivery serv.png" alt="" />
+                <div class="text_logistic">
+                  <h4 class="title_black mb-1">Warehousing</h4>
+                  <p class="mb-1">
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts.
+                  </p>
+                  <a class="link" href="#"
+                    >READ MORE <i class="fas fa-long-arrow-alt-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 my-3 my-sm-4 col-md-3 col-sm-12" data-aos="zoom-in">
+              <div class="box_serv d-flex">
+                <img src="img/delivery-box serv.png" alt="" />
+                <div class="text_logistic">
+                  <h4 class="title_black mb-1">Transportation Services</h4>
+                  <p class="mb-1">
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts.
+                  </p>
+                  <a class="link" href="#"
+                    >READ MORE <i class="fas fa-long-arrow-alt-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 my-3 my-sm-4 col-md-3 col-sm-12" data-aos="zoom-in">
+              <div class="box_serv d-flex">
+                <img src="img/wholesale serv.png" alt="" />
+                <div class="text_logistic">
+                  <h4 class="title_black mb-1">Sea Freight</h4>
+                  <p class="mb-1">
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts.
+                  </p>
+                  <a class="link" href="#"
+                    >READ MORE <i class="fas fa-long-arrow-alt-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 my-3 my-sm-4 col-md-3 col-sm-12" data-aos="zoom-in">
+              <div class="box_serv d-flex">
+                <img src="img/box serv.png" alt="" />
+                <div class="text_logistic">
+                  <h4 class="title_black mb-1">Distribution</h4>
+                  <p class="mb-1">
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts.
+                  </p>
+                  <a class="link" href="#"
+                    >READ MORE <i class="fas fa-long-arrow-alt-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 my-3 my-sm-4 col-md-3 col-sm-12" data-aos="zoom-in">
+              <div class="box_serv d-flex">
+                <img src="img/airplane.png" alt="" />
+                <div class="text_logistic">
+                  <h4 class="title_black mb-1">Air Freight</h4>
+                  <p class="mb-1">
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts.
+                  </p>
+                  <a class="link" href="#"
+                    >READ MORE <i class="fas fa-long-arrow-alt-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+    </section>
+    <section id="about">
+      <div class="about-main">
+        <div class="_hero about_hero mt-5">
+          <div class="text-center">
+            <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">About us</h3>
+            <p class="lead mb-4" data-aos="fade-up" data-aos-delay="500">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia<br />there live the blind texts.
+            </p>
+            <button class="btn btn-hero" data-aos="fade-up" data-aos-delay="700">
+              <a href="#to_about">See More</a>
+            </button>
+          </div>
+        </div>
+        <div class="mt-5" id="to_about"></div>
+        <div class="container">
+          <div class="row padding align-items-md-center">
+            <div class="col-lg-6 col-sm-12" data-aos="fade-right">
+              <h5 class="title_light">MISSION</h5>
+              <h2 class="title3">About us</h2>
+              <p class="mb-5">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts. Separated
+                they live in Bookmarksgrove right at the coast of the Semantics,
+                a large language ocean.
+              </p>
+              <div class="item-about d-flex">
+                <div class="icon">
+                  <i class="fas fa-plane-departure fa-3x"></i>
+                </div>
+                <div class="text">
+                  <h4 class="title_black mb-3">Air Flight</h4>
+                  <p class="mb-3">
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts.
+                  </p>
+                </div>
+              </div>
+              <div class="item-about d-flex">
+                <div class="icon">
+                  <i class="fas fa-ship fa-3x"></i>
+                </div>
+                <div class="text">
+                  <h4 class="title_black mb-3">Land Freight</h4>
+                  <p class="mb-3">
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-6 col-sm-12 align-items-center"
+              data-aos="fade-left"
+            >
+              <img src="img/about.jpg" alt="" class="rounded" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="teams">
+      <div class="teams-main padding">
+        <div class="_hero teams_hero">
+          <div class="text-center">
+            <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Discover our Team</h3>
+            <p class="lead mb-4"  data-aos="fade-up" data-aos-delay="500">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia<br />there live the blind texts.
+            </p>
+            <button class="btn btn-hero"   data-aos="fade-up" data-aos-delay="700">
+              <a href="#to_teams">See More</a>
+            </button>
+          </div>
+        </div>
+        <div class="mt-5" id="to_teams"></div>
+        <div class="container">
+          <h5 class="title_light text-center">Awesome team</h5>
+          <h2 class="title3 text-center">Team</h2>
+          <div class="row mt-5">
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 my-4 round_pic"
+              data-aos="zoom-in"
+            >
+              <img src="img/t1.jpg" alt="" class="mb-3" />
+              <h3 class="title_black mb-2">Raymond Woodward</h3>
+              <p class="mb-2">Engineer & Architect</p>
+              <p class="mb-2 my_p">
+                Separated they live in. Separated they live in Bookmarksgrove
+                right at the coast of the Semantics.
+              </p>
+              <a href="#" class="link">Learn More</a>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 my-4 round_pic"
+              data-aos="zoom-in"
+            >
+              <img src="img/t2.jpg" alt="" class="mb-3" />
+              <h3 class="title_black mb-2">Raymond Woodward</h3>
+              <p class="mb-2">Engineer & Architect</p>
+              <p class="mb-2 my_p">
+                Separated they live in. Separated they live in Bookmarksgrove
+                right at the coast of the Semantics.
+              </p>
+              <a href="#" class="link">Learn More</a>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 my-4 round_pic np-right"
+              data-aos="zoom-in"
+            >
+              <img src="img/t3.jpg" alt="" class="mb-3" />
+              <h3 class="title_black mb-2">Raymond Woodward</h3>
+              <p class="mb-2">Engineer & Architect</p>
+              <p class="mb-2 my_p">
+                Separated they live in. Separated they live in Bookmarksgrove
+                right at the coast of the Semantics.
+              </p>
+              <a href="#" class="link">Learn More</a>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 my-4 round_pic np-left"
+              data-aos="zoom-in"
+            >
+              <img src="img/t3.jpg" alt="" class="mb-3" />
+              <h3 class="title_black mb-2">Raymond Woodward</h3>
+              <p class="mb-2">Engineer & Architect</p>
+              <p class="mb-2 my_p">
+                Separated they live in. Separated they live in Bookmarksgrove
+                right at the coast of the Semantics.
+              </p>
+              <a href="#" class="link">Learn More</a>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 my-4 round_pic"
+              data-aos="zoom-in"
+            >
+              <img src="img/t1.jpg" alt="" class="mb-3" />
+              <h3 class="title_black mb-2">Raymond Woodward</h3>
+              <p class="mb-2">Engineer & Architect</p>
+              <p class="mb-2 my_p">
+                Separated they live in. Separated they live in Bookmarksgrove
+                right at the coast of the Semantics.
+              </p>
+              <a href="#" class="link">Learn More</a>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 my-4 round_pic np-right"
+              data-aos="zoom-in"
+            >
+              <img src="img/t4.jpg" alt="" class="mb-3" />
+              <h3 class="title_black mb-2">Raymond Woodward</h3>
+              <p class="mb-2">Engineer & Architect</p>
+              <p class="mb-2 my_p">
+                Separated they live in. Separated they live in Bookmarksgrove
+                right at the coast of the Semantics.
+              </p>
+              <a href="#" class="link">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="news">
+      <div class="news-main padding">
+        <div class="_hero news_hero">
+          <div class="text-center">
+            <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Latest News</h3>
+            <p class="lead mb-4"  data-aos="fade-up" data-aos-delay="500">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia<br />there live the blind texts.
+            </p>
+            <button class="btn btn-hero"   data-aos="fade-up" data-aos-delay="700">
+              <a href="#to_news">See More</a>
+            </button>
+          </div>
+        </div>
+        <div class="mt-5" id="to_news"></div>
+        <div class="container">
+          <h5 class="title_light text-center">This News</h5>
+          <h2 class="title3 text-center">News</h2>
+          <div class="row mt-5">
+            <div class="col-lg-3 col-md-6 col-sm-12 my-3 my-sm-4">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="img/card1.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title mb-1">
+                    Far far away, behind the word mountains
+                  </h5>
+                  <p class="mb-2">Aug 20, 2020</p>
+                  <p class="card-text mb-2">
+                    When she reached the first hills of the Italic Mountains,
+                    she had a last view back on the skyline of her hometown
+                    Bookmarksgrove,
+                  </p>
+                  <a href="#" class="link"
+                    >READ MORE <i class="fas fa-long-arrow-alt-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 my-3 my-sm-4">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="img/card2.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title mb-1">
+                    Far far away, behind the word mountains
+                  </h5>
+                  <p class="mb-2">Aug 20, 2020</p>
+                  <p class="card-text mb-2">
+                    When she reached the first hills of the Italic Mountains,
+                    she had a last view back on the skyline of her hometown
+                    Bookmarksgrove,
+                  </p>
+                  <a href="#" class="link"
+                    >READ MORE <i class="fas fa-long-arrow-alt-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 my-3 my-sm-4">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="img/card3.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title mb-1">
+                    Far far away, behind the word mountains
+                  </h5>
+                  <p class="mb-2">Aug 20, 2020</p>
+                  <p class="card-text mb-2">
+                    When she reached the first hills of the Italic Mountains,
+                    she had a last view back on the skyline of her hometown
+                    Bookmarksgrove,
+                  </p>
+                  <a href="#" class="link"
+                    >READ MORE <i class="fas fa-long-arrow-alt-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 my-3 my-sm-4">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="img/card4.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title mb-1">
+                    Far far away, behind the word mountains
+                  </h5>
+                  <p class="mb-2">Aug 20, 2020</p>
+                  <p class="card-text mb-2">
+                    When she reached the first hills of the Italic Mountains,
+                    she had a last view back on the skyline of her hometown
+                    Bookmarksgrove,
+                  </p>
+                  <a href="#" class="link"
+                    >READ MORE <i class="fas fa-long-arrow-alt-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <div class="testimonials-main padding">
+        <div class="_hero testimonials_hero">
+          <div class="text-center">
+            <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Clients Opinions</h3>
+            <p class="lead mb-4"  data-aos="fade-up" data-aos-delay="500">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia<br />there live the blind texts.
+            </p>
+            <button class="btn btn-hero"   data-aos="fade-up" data-aos-delay="700">
+              <a href="#to_testi">See More</a>
+            </button>
+          </div>
+        </div>
+        <div class="mt-5" id="to_testi"></div>
+        <h5 class="title_light text-center">Our Client</h5>
+        <h2 class="title3 text-center">Testimonials</h2>
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col-lg-6 mb-sm-3">
+              <h5 class="title_light">Testimonials</h5>
+              <h3 class="title3">Happy Customer</h3>
+              <div class="slide mt-5">
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img src="img/t1.jpg" class="mb-3" alt="" />
+                      <h4 class="title_black mb-2">James Woodland</h4>
+                      <p class="mb-2">Designer at Facebook</p>
+                      <p>
+                        “A small river named Duden flows by their place and
+                        supplies it with the necessary regelialia. It is a
+                        paradisematic country, in which roasted parts of
+                        sentences fly into your mouth.”
+                      </p>
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/t2.jpg" class="mb-3" alt="" />
+                      <h4 class="title_black mb-2">James Woodland</h4>
+                      <p class="mb-2">Designer at Facebook</p>
+                      <p>
+                        “A small river named Duden flows by their place and
+                        supplies it with the necessary regelialia. It is a
+                        paradisematic country, in which roasted parts of
+                        sentences fly into your mouth.”
+                      </p>
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/t3.jpg" class="mb-3" alt="" />
+                      <h4 class="title_black mb-2">James Woodland</h4>
+                      <p class="mb-2">Designer at Facebook</p>
+                      <p>
+                        “A small river named Duden flows by their place and
+                        supplies it with the necessary regelialia. It is a
+                        paradisematic country, in which roasted parts of
+                        sentences fly into your mouth.”
+                      </p>
+                    </div>
+                  </div>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+
+                  <!-- If we need navigation buttons -->
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 np-right">
+              <h5 class="title_light">WHY US</h5>
+              <h3 class="title3">Why Choose Us</h3>
+              <div class="faqs">
+                <ul class="faq">
+                  <!-- <i class="fas fa-window-minimize"></i> -->
+                  <li class="faq_link active">
+                    <i class="fas fa-plus fa-window-minimize"></i> Easy find
+                    logistics
+                  </li>
+                  <p class="faq_p active">
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts.<br /><br />
+                    Separated they live in Bookmarksgrove right at the coast of
+                    the Semantics, a large language ocean.
+                  </p>
+                </ul>
+                <ul class="faq">
+                  <!-- <i class="fas fa-window-minimize"></i> -->
+                  <li class="faq_link">
+                    <i class="fas fa-plus"></i> Fast and Secure Transportation
+                  </li>
+                  <p class="faq_p">
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts.<br /><br />
+                    Separated they live in Bookmarksgrove right at the coast of
+                    the Semantics, a large language ocean.
+                  </p>
+                </ul>
+                <ul class="faq">
+                  <!-- <i class="fas fa-window-minimize"></i> -->
+                  <li class="faq_link">
+                    <i class="fas fa-plus"></i> Delivering Results for industry
+                    leaders
+                  </li>
+                  <p class="faq_p">
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts.<br /><br />
+                    Separated they live in Bookmarksgrove right at the coast of
+                    the Semantics, a large language ocean.
+                  </p>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact-main padding">
+        <div class="_hero contact_hero">
+          <div class="text-center">
+            <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Contact Us</h3>
+            <p class="lead mb-4"  data-aos="fade-up" data-aos-delay="500">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia<br />there live the blind texts.
+            </p>
+            <button class="btn btn-hero"   data-aos="fade-up" data-aos-delay="700">
+              <a href="#to_contact">See More</a>
+            </button>
+          </div>
+        </div>
+        <div class="mt-5" id="to_contact"></div>
+        <div class="container">
+          <h5 class="title_light text-center">We are happy</h5>
+          <h2 class="title3 text-center">Connect with us</h2>
+          <form class="mt-5">
+            <div class="form-group row">
+              <div class="col-lg-6 mb-3 np-left">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" />
+              </div>
+              <div class="col-lg-6 mb-3 np-right">
+                <label for="lastName">First Name</label>
+                <input type="text" class="form-control" id="lastName" />
+              </div>
+              <div class="col-lg-12 mb-3 np-left np-right">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="emailHelp"
+                  placeholder="souf@exe.xx"
+                />
+              </div>
+              <div class="col-lg-12 mb-3 np-left np-right">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  placeholder="type your message..."
+                  rows="2"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn mb-2">Confirm</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 my-md-3 my-sm-4">
+              <h5>About Foundation.</h5>
+              <p>
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+              <h5>Connect</h5>
+              <div class="list_social_icons my-3">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-codepen"></i>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 my-md-3 my-sm-4">
+              <h5>Links</h5>
+              <a>Services</a>
+              <a>About us</a>
+              <a>Team</a>
+              <a>Testimonials</a>
+              <a>News</a>
+              <a>Contact us</a>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 my-md-3 my-sm-4">
+              <h5>Company</h5>
+              <a>Services</a>
+              <a>About us</a>
+              <a>Team</a>
+              <a>Testimonials</a>
+              <a>News</a>
+              <a>Contact us</a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 my-md-3 my-sm-4">
+              <h5>Contact</h5>
+              <p>43 Raymouth Rd. Baltemoer, London 3910</p>
+              <p>+1(123)-456-7890</p>
+              <p>+1(123)-456-7890</p>
+              <p>info@mydomain.com</p>
+            </div>
+          </div>
+          <p class="p_center">
+            Thank you Colorlib For Inspire this Template <span>&#10084;</span> by Soufiane M'channa
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Lines -->
+
+    <!-- Scipts js -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper-container", {
+        // Optional parameters
+        loop: true,
+        direction: "horizontal",
+        spaceBetween: 30,
+        centeredSlides: true,
+        speed: 2500,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        keyboard: {
+          enabled: true,
+          onlyInViewport: false,
+        },
+      });
+    </script>
+    <script src="js/main.js"></script>
+    <!-- End -->
+  </body>
+</html>
